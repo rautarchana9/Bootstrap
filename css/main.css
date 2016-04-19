@@ -1,0 +1,97 @@
+body {
+    font-size: 13px;
+}
+.navbar {
+    background: #202020;
+    border-bottom: none;
+    margin-bottom: 0;
+    height: 62px;
+}
+.navbar-nav {
+    margin: 10px -10px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #bd1f3a;
+}
+.navbar-brand {
+    float: left;
+    padding: 21px 10px;
+    font-size: 18px;
+    line-height: 20px;
+}
+.navbar .navbar-header .navbar-brand {
+    padding: 0;
+    margin-right: 12px;
+    background-color: #bd1f3a;
+    height: auto;
+}
+.navbar .navbar-header .navbar-brand .logo-container{
+    background: url("../img/header-logo.png") 9px center no-repeat;
+    width: 220px;
+    height: 62px;
+    max-width: 55px;
+    margin-right: 15px;
+    margin-left: 8px;
+    transition: max-width 0.5s ease-in-out;
+}
+.navbar .navbar-header .navbar-brand .logo-container:hover {
+    max-width: 185px
+}
+.navbar .navbar-collapse li {
+	background: url("../img/header-nav-divider.png") right 50% no-repeat;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #f5f5f5;
+}
+.navbar .navbar-collapse .navbar-nav>li>a:focus, 
+.navbar .navbar-collapse .navbar-nav>li>a:hover {
+    color: #bd1f3a;
+    background-color: #202020;
+}
+.navbar .navbar-collapse .navbar-nav>li>a {
+    color: white;
+}
+.navbar .navbar-collapse .animax .tagline ,
+.navbar .navbar-collapse .animax .contact {
+    margin-top: 19px;
+    margin-right: 26px;
+    font-size: 15px;
+    position: absolute;
+    top: 0px;
+    left: 900px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.navbar .navbar-collapse .animax .tagline.active ,
+.navbar .navbar-collapse .animax .contact.active {
+    opacity: 1;
+}
+.navbar .navbar-collapse .tagline .white {
+   	color: white;
+}
+
+.navbar .navbar-collapse .tagline .red {
+   	color: #cc2d48;
+}
+
+.navbar .navbar-collapse .contact a {
+	color: #f5f5f5;
+}
+@media (max-width: 992px){
+	.navbar .navbar-header .navbar-brand  {
+   		max-width: 188px;
+    	margin-right: 14px;
+	}
+}
+@media (max-width: 992px){
+	.navbar .navbar-collapse .navbar-nav {
+    	margin-bottom: 0px;
+    	margin-top: 0px;
+}
+@media (max-width: 992px) {
+    .navbar .navbar-collapse .animation {
+        display: none !important;
+    }
+}
+
+
